@@ -1,0 +1,14 @@
+/* line 1, ../sass/bg-dark.scss */
+.bg-dark {
+  color: white;
+}
+
+/* line 5, ../sass/bg-dark.scss */
+.bg-dark a {
+  color: white;
+}
+
+/* line 10, ../sass/bg-dark.scss */
+.bg-dark footer {
+  border-top: 1px white solid;
+}

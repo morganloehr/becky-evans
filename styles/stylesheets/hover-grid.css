@@ -1,0 +1,160 @@
+/* Common style */
+/* line 25, ../sass/hover-grid.scss */
+.grid figure .img-thmb {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+}
+
+/* line 32, ../sass/hover-grid.scss */
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 41, ../sass/hover-grid.scss */
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+/* line 46, ../sass/hover-grid.scss */
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+/* line 57, ../sass/hover-grid.scss */
+.grid figure figcaption > a {
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+/* line 65, ../sass/hover-grid.scss */
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+/* line 70, ../sass/hover-grid.scss */
+.grid figure h2 span {
+  font-weight: 800;
+}
+
+/* line 74, ../sass/hover-grid.scss */
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+/* line 79, ../sass/hover-grid.scss */
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+/* line 89, ../sass/hover-grid.scss */
+.effect-bubba {
+  background: #333;
+}
+
+/* line 97, ../sass/hover-grid.scss */
+figure.effect-bubba .img-thmb {
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+  opacity: 1;
+}
+
+/* line 107, ../sass/hover-grid.scss */
+figure.effect-bubba:hover .img-thmb {
+  opacity: 0.4;
+}
+
+/* line 111, ../sass/hover-grid.scss */
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+/* line 124, ../sass/hover-grid.scss */
+figure.effect-bubba figcaption::before {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+/* line 131, ../sass/hover-grid.scss */
+figure.effect-bubba figcaption::after {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+}
+
+/* line 138, ../sass/hover-grid.scss */
+figure.effect-bubba h2 {
+  padding-top: 40%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, -20px, 0);
+  transform: translate3d(0, -20px, 0);
+  opacity: 0;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 149, ../sass/hover-grid.scss */
+figure.effect-bubba p {
+  padding: 20px 2.5em;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
+}
+
+/* line 158, ../sass/hover-grid.scss */
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 165, ../sass/hover-grid.scss */
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 172, ../sass/hover-grid.scss */
+.hoverH2 {
+  color: #fff;
+}

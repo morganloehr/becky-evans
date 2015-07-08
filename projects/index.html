@@ -1,0 +1,55 @@
+{% capture content %}
+    <article>
+        <h1 class="page-title">{{ title }}</h1>
+        {{ body }}
+    </article>
+
+    <div class="row grid">
+	    {% for page in pages %}
+	        <div class="col-xs-12 col-md-3">
+	         	<figure class="effect-bubba">
+					<a href="{{page.url}}">
+		            {% if page.assets.size > 0 %}
+				    <div class="img-thmb" style="background:url({{page.assets.first.url}})no-repeat center center; height: 263px; width: 263px;   -webkit-background-size: cover;
+			    -moz-background-size: cover;
+			    -o-background-size: cover;
+			    background-size: cover;">
+			    
+		          	{% endif %}
+		          	</div>
+					<figcaption>
+						<h2>{{page.title}}</h2>
+					</figcaption>
+		            </a>
+	        	
+	        	</figure>
+			</div>
+		{% endfor %}
+    </div>
+ 
+
+
+<!--     <div class="container ">
+	    <div class="row">
+		    {% for page in pages %}
+		        <div class="col-xs-12 col-md-3 no-padding">
+		          <article class="post-preview">
+		            {% if page.assets.size > 0 %}
+		            <div class="img-thmb" style="background:url({{page.assets.first.url}})no-repeat center center; height: 250px; width: 250px;   -webkit-background-size: cover;
+				    -moz-background-size: cover;
+				    -o-background-size: cover;
+				    background-size: cover;">
+				    </div>
+		          	{% endif %}
+		            <h2><a href="{{post.url}}">{{page.title}}</a></h2>
+		            <p><a href="{{page.url}}">View post</a>
+		          </article>
+				</div>
+			{% endfor %}
+	    </div>
+    </div> -->
+
+
+{% endcapture %}
+
+{% include 'layouts/default' %}

@@ -1,0 +1,125 @@
+// ######VARIABLES#########
+
+$font-stack: "Open Sans", Helvetica, sans-serif;
+
+$normal-font: 16px;
+$big-font: 40px;
+$bold-font: 700;
+
+$white: #ffffff;
+$black: #333;
+
+// ###### END VARIABLES#########
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: $font-stack;
+	font-size: $normal-font;
+	font-weight: 400;
+	background-color: #fafafa;
+	color: $black;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: $black;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.primary-header {
+	position: relative;
+}
+
+.site-title {
+	font-weight: 300;
+	font-size: $big-font;
+	text-transform: uppercase;
+	letter-spacing: .15em;
+	display: inline-block;
+	line-height: 0;
+}
+
+h1.page-title {
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+
+header {
+	padding-top: 100px;
+	margin-bottom: 60px;
+}
+
+
+ul.page-menu {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+
+.page-menu li {
+	display: inline;
+}
+
+.page-menu a {
+	padding: 0 10px;
+}
+
+.page-menu a:last-child {
+	padding-right: 0px;
+}
+
+/* Wrapper for page content to push down footer */
+.wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -100px;
+  /* Pad bottom by footer height */
+  padding: 0 0 100px;
+}
+
+/* Set the fixed height of the footer here */
+footer {
+	border-top: 1px $black solid;
+	padding-top: 20px;
+	height: 100px;
+}
+
+
+.no-padding {
+	padding: 0;
+}
+
+// PROJECT GALLERY
+
+.image-description br {
+	display: block;
+	line-height: 3em;
+}
+
+.post-image {
+	margin-bottom: 40px;
+}
+
+.image-title {
+	margin-top: 10px;
+	font-style: italic;
+}
+
+
+

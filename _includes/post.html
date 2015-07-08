@@ -1,0 +1,59 @@
+<!-- <article class="post-content">
+	<h1 class="page-title">{{ post.title}}</h1>
+	{{post.body}}
+
+
+
+  <div class="row">
+  {{ for assets in posts }}
+  	<div class="col-xs-12 col-md-6">
+  		<img src="{{post.assets}}" alt="">
+  	</div>
+  {{ endfor }}
+  {{ for content in posts }}
+  	<div class="col-xs-12 col-md-6">
+  		<p>{{ post.content }}</p>
+  	</div>
+  {{ endfor }}  
+  </div>
+
+</article> -->
+
+
+
+<!-- <article class="post-content">
+	    {% for post in posts %}
+	        <div class="col-xs-12 col-md-6 no-padding">
+	            {% if post.assets.size > 0 %}
+	          	<img src="{{post.assets.first.url}}" alt="{{filename}}">
+	          	{% endif %}
+	            <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+			</div>
+			<h2>{{ post.title }}</h2>
+		{% endfor %}
+
+</article> -->
+
+
+<h1 class="page-title">{{ title }}</h1>
+{% for post in posts %}
+<div class="row post-image">
+      {% if post.assets.size > 0 %}
+      {% assign image_url = post.assets.first.url %}
+      {% endif %}
+
+      <div class="col-xs-12 col-md-6">
+      	<img src="{{image_url}}" alt="{{post.title}}" />
+      	
+      	<h2 class="image-title">{{post.title}}</h2>
+      </div>
+      <div class="col-xs-12 col-md-6">
+      	<p class="image-description">{{ post.meta.description }}</p>
+      </div>
+</div>	
+{% endfor %}
+
+
+
+
+

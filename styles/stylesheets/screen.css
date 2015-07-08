@@ -1,0 +1,377 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+/* line 14, ../sass/base.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 18, ../sass/base.scss */
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* line 26, ../sass/base.scss */
+img {
+  width: 100%;
+}
+
+/* line 30, ../sass/base.scss */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* line 35, ../sass/base.scss */
+p {
+  line-height: 1.5em;
+}
+
+/* line 39, ../sass/base.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 43, ../sass/base.scss */
+.primary-header {
+  position: relative;
+}
+
+/* line 47, ../sass/base.scss */
+.site-title {
+  font-weight: 300;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  display: inline-block;
+  line-height: 0;
+}
+
+/* line 56, ../sass/base.scss */
+h1.page-title {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+/* line 62, ../sass/base.scss */
+header {
+  padding-top: 100px;
+  margin-bottom: 60px;
+}
+
+/* line 68, ../sass/base.scss */
+ul.page-menu {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+/* line 74, ../sass/base.scss */
+.page-menu li {
+  display: inline;
+}
+
+/* line 78, ../sass/base.scss */
+.page-menu a {
+  padding: 0 10px;
+}
+
+/* line 82, ../sass/base.scss */
+.page-menu a:last-child {
+  padding-right: 0px;
+}
+
+/* Wrapper for page content to push down footer */
+/* line 87, ../sass/base.scss */
+.wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -100px;
+  /* Pad bottom by footer height */
+  padding: 0 0 100px;
+}
+
+/* Set the fixed height of the footer here */
+/* line 97, ../sass/base.scss */
+footer {
+  border-top: 1px #333 solid;
+  padding-top: 20px;
+  height: 100px;
+}
+
+/* line 104, ../sass/base.scss */
+.no-padding {
+  padding: 0;
+}
+
+/* line 110, ../sass/base.scss */
+.image-description br {
+  display: block;
+  line-height: 3em;
+}
+
+/* line 115, ../sass/base.scss */
+.post-image {
+  margin-bottom: 40px;
+}
+
+/* line 119, ../sass/base.scss */
+.image-title {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* line 1, ../sass/bg-dark.scss */
+.bg-dark {
+  color: white;
+}
+
+/* line 5, ../sass/bg-dark.scss */
+.bg-dark a {
+  color: white;
+}
+
+/* line 10, ../sass/bg-dark.scss */
+.bg-dark footer {
+  border-top: 1px white solid;
+}
+
+/* Common style */
+/* line 25, ../sass/hover-grid.scss */
+.grid figure .img-thmb {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+}
+
+/* line 32, ../sass/hover-grid.scss */
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 41, ../sass/hover-grid.scss */
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+/* line 46, ../sass/hover-grid.scss */
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+/* line 57, ../sass/hover-grid.scss */
+.grid figure figcaption > a {
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+/* line 65, ../sass/hover-grid.scss */
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+/* line 70, ../sass/hover-grid.scss */
+.grid figure h2 span {
+  font-weight: 800;
+}
+
+/* line 74, ../sass/hover-grid.scss */
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+/* line 79, ../sass/hover-grid.scss */
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+/* line 89, ../sass/hover-grid.scss */
+.effect-bubba {
+  background: #333;
+}
+
+/* line 97, ../sass/hover-grid.scss */
+figure.effect-bubba .img-thmb {
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+  opacity: 1;
+}
+
+/* line 107, ../sass/hover-grid.scss */
+figure.effect-bubba:hover .img-thmb {
+  opacity: 0.4;
+}
+
+/* line 111, ../sass/hover-grid.scss */
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+/* line 124, ../sass/hover-grid.scss */
+figure.effect-bubba figcaption::before {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+/* line 131, ../sass/hover-grid.scss */
+figure.effect-bubba figcaption::after {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+}
+
+/* line 138, ../sass/hover-grid.scss */
+figure.effect-bubba h2 {
+  padding-top: 40%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, -20px, 0);
+  transform: translate3d(0, -20px, 0);
+  opacity: 0;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 149, ../sass/hover-grid.scss */
+figure.effect-bubba p {
+  padding: 20px 2.5em;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
+}
+
+/* line 158, ../sass/hover-grid.scss */
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 165, ../sass/hover-grid.scss */
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 172, ../sass/hover-grid.scss */
+.hoverH2 {
+  color: #fff;
+}

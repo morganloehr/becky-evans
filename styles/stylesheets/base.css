@@ -1,0 +1,124 @@
+/* line 14, ../sass/base.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 18, ../sass/base.scss */
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* line 26, ../sass/base.scss */
+img {
+  width: 100%;
+}
+
+/* line 30, ../sass/base.scss */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* line 35, ../sass/base.scss */
+p {
+  line-height: 1.5em;
+}
+
+/* line 39, ../sass/base.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 43, ../sass/base.scss */
+.primary-header {
+  position: relative;
+}
+
+/* line 47, ../sass/base.scss */
+.site-title {
+  font-weight: 300;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  display: inline-block;
+  line-height: 0;
+}
+
+/* line 56, ../sass/base.scss */
+h1.page-title {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+/* line 62, ../sass/base.scss */
+header {
+  padding-top: 100px;
+  margin-bottom: 60px;
+}
+
+/* line 68, ../sass/base.scss */
+ul.page-menu {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+/* line 74, ../sass/base.scss */
+.page-menu li {
+  display: inline;
+}
+
+/* line 78, ../sass/base.scss */
+.page-menu a {
+  padding: 0 10px;
+}
+
+/* line 82, ../sass/base.scss */
+.page-menu a:last-child {
+  padding-right: 0px;
+}
+
+/* Wrapper for page content to push down footer */
+/* line 87, ../sass/base.scss */
+.wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -100px;
+  /* Pad bottom by footer height */
+  padding: 0 0 100px;
+}
+
+/* Set the fixed height of the footer here */
+/* line 97, ../sass/base.scss */
+footer {
+  border-top: 1px #333 solid;
+  padding-top: 20px;
+  height: 100px;
+}
+
+/* line 104, ../sass/base.scss */
+.no-padding {
+  padding: 0;
+}
+
+/* line 110, ../sass/base.scss */
+.image-description br {
+  display: block;
+  line-height: 3em;
+}
+
+/* line 115, ../sass/base.scss */
+.post-image {
+  margin-bottom: 40px;
+}
+
+/* line 119, ../sass/base.scss */
+.image-title {
+  margin-top: 10px;
+  font-style: italic;
+}
