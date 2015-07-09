@@ -5,7 +5,8 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>{{site.title}} | {{title}}</title>
   <link rel="alternate" type="application/rss+xml" href="{{site.feed_url}}" />
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<!--   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'> -->
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles/stylesheets/screen.css" />
 
@@ -26,12 +27,17 @@
       <header class="primary-header">
         <h1 class="site-title"><a href="/">{{site.title}}</a></h1>
         <!-- <h1><img src="/assets/logo-white.png"></h1> -->
-
-        <ul class="page-menu">
-          {% for page in site.pages %}
-            <li><a href="{{page.url}}"{% if page.url == url %} class="is-current-page"{% endif %}>{{page.title}}</a></li>
-          {% endfor %}
-        </ul>
+          <nav id="nav-main">
+            <ul class="page-menu">
+              {% for page in site.pages %}
+                <li><a href="{{page.url}}"{% if page.url == url %} class="is-current-page"{% endif %}>{{page.title}}</a></li>
+              {% endfor %}
+            </ul>
+          </nav>
+          <div id="nav-trigger">
+              <span>Menu</span>
+          </div>
+          <nav id="nav-mobile"></nav>
       </header>
       {{content}}
    </div>
@@ -40,10 +46,32 @@
   <div class="container bg-dark">
     <footer>
       
-        all rights reserved
+      <div class="left right-reserved">
+        All rights reserved {{site.title}}
+      </div>
+      <div class="right flickr">
+        <a href="https://www.flickr.com/photos/beckyevans/"><img src="/assets/flickr-white.png" alt=""></a>
+      </div>
+
       
     </footer>
   </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $("#nav-mobile").html($("#nav-main").html());
+        $("#nav-trigger span").click(function(){
+            if ($("nav#nav-mobile ul").hasClass("expanded")) {
+                $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+                $(this).removeClass("open");
+            } else {
+                $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+                $(this).addClass("open");
+            }
+        });
+    });
+  </script>
 
 </body>
 </html>

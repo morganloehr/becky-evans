@@ -1,89 +1,121 @@
-/* line 14, ../sass/base.scss */
+/* line 15, ../sass/base.scss */
 html, body {
   height: 100%;
 }
 
-/* line 18, ../sass/base.scss */
+/* line 19, ../sass/base.scss */
 body {
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: "Lato", Helvetica, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   background-color: #fafafa;
   color: #333;
 }
 
-/* line 26, ../sass/base.scss */
+/* line 27, ../sass/base.scss */
 img {
   width: 100%;
 }
 
-/* line 30, ../sass/base.scss */
+/* line 31, ../sass/base.scss */
+em {
+  display: block;
+  font-style: italic;
+}
+
+/* line 36, ../sass/base.scss */
 a {
-  text-decoration: none;
   color: #333;
+  text-decoration: underline;
 }
 
-/* line 35, ../sass/base.scss */
+/* line 41, ../sass/base.scss */
+a:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+/* line 46, ../sass/base.scss */
 p {
-  line-height: 1.5em;
+  line-height: 1.65em;
+  margin-bottom: 20px;
+  letter-spacing: .03em;
+  word-spacing: .05em;
 }
 
-/* line 39, ../sass/base.scss */
+/* line 53, ../sass/base.scss */
 a:hover {
+  color: #b01e1e;
+}
+
+/* line 57, ../sass/base.scss */
+.primary-header a {
   text-decoration: none;
 }
 
-/* line 43, ../sass/base.scss */
+/* line 61, ../sass/base.scss */
+a.is-current-page {
+  text-decoration: underline;
+}
+
+/* line 65, ../sass/base.scss */
 .primary-header {
   position: relative;
 }
 
-/* line 47, ../sass/base.scss */
+/* line 69, ../sass/base.scss */
 .site-title {
-  font-weight: 300;
+  font-weight: 100;
   font-size: 40px;
   text-transform: uppercase;
-  letter-spacing: .15em;
+  letter-spacing: .05em;
   display: inline-block;
   line-height: 0;
+  margin-left: -3px;
 }
 
-/* line 56, ../sass/base.scss */
+/* line 79, ../sass/base.scss */
 h1.page-title {
   font-size: 24px;
   margin-bottom: 40px;
 }
 
-/* line 62, ../sass/base.scss */
+/* line 85, ../sass/base.scss */
 header {
   padding-top: 100px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
-/* line 68, ../sass/base.scss */
+/* line 91, ../sass/base.scss */
 ul.page-menu {
   display: inline-block;
   position: absolute;
   right: 0;
+  bottom: 0;
 }
 
-/* line 74, ../sass/base.scss */
+/* line 98, ../sass/base.scss */
 .page-menu li {
   display: inline;
 }
 
-/* line 78, ../sass/base.scss */
-.page-menu a {
-  padding: 0 10px;
+/* line 102, ../sass/base.scss */
+.page-menu li:first-child {
+  display: none;
 }
 
-/* line 82, ../sass/base.scss */
+/* line 106, ../sass/base.scss */
+.page-menu a {
+  padding: 0 15px;
+}
+
+/* line 110, ../sass/base.scss */
 .page-menu a:last-child {
   padding-right: 0px;
 }
 
 /* Wrapper for page content to push down footer */
-/* line 87, ../sass/base.scss */
+/* line 115, ../sass/base.scss */
 .wrap {
   min-height: 100%;
   height: auto;
@@ -93,32 +125,137 @@ ul.page-menu {
   padding: 0 0 100px;
 }
 
-/* Set the fixed height of the footer here */
-/* line 97, ../sass/base.scss */
-footer {
-  border-top: 1px #333 solid;
-  padding-top: 20px;
-  height: 100px;
+/* line 124, ../sass/base.scss */
+.container-main {
+  margin-bottom: 60px;
 }
 
-/* line 104, ../sass/base.scss */
+/* Set the fixed height of the footer here */
+/* line 129, ../sass/base.scss */
+footer {
+  border-top: 1px #333 solid;
+  padding-top: 40px;
+  height: 100px;
+  position: relative;
+}
+
+/* line 136, ../sass/base.scss */
+.rights-reserved {
+  font-size: 9px;
+}
+
+/* line 140, ../sass/base.scss */
+.flickr {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  top: 35px;
+}
+
+/* line 149, ../sass/base.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 110, ../sass/base.scss */
+/* line 155, ../sass/base.scss */
 .image-description br {
   display: block;
   line-height: 3em;
 }
 
-/* line 115, ../sass/base.scss */
+/* line 160, ../sass/base.scss */
 .post-image {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
-/* line 119, ../sass/base.scss */
+/* line 164, ../sass/base.scss */
 .image-title {
   margin-top: 10px;
   font-style: italic;
+}
+
+/* line 169, ../sass/base.scss */
+.img-thmb {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 177, ../sass/base.scss */
+.about h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 40px;
+}
+
+/* line 183, ../sass/base.scss */
+.about h2 {
+  margin-bottom: 30px;
+}
+
+/* line 187, ../sass/base.scss */
+.about ul {
+  margin-top: -15px;
+  margin-bottom: 30px;
+}
+
+/* line 192, ../sass/base.scss */
+.about li {
+  padding: 5px 0;
+}
+
+/* line 196, ../sass/base.scss */
+.about img {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 205, ../sass/base.scss */
+  .container {
+    width: 970px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 225, ../sass/base.scss */
+  .img-thmb {
+    height: 345px;
+    width: 345px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* line 232, ../sass/base.scss */
+  .img-thmb {
+    height: 213px;
+    width: 213px;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* line 241, ../sass/base.scss */
+  .image-title {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 247, ../sass/base.scss */
+  .site-title {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  /* line 253, ../sass/base.scss */
+  .primary-header {
+    text-align: center;
+  }
+
+  /* line 257, ../sass/base.scss */
+  .effect-bubba {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* line 263, ../sass/base.scss */
+  figure {
+    margin-bottom: 80px;
+  }
 }
