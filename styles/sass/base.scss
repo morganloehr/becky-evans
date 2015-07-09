@@ -233,6 +233,10 @@ footer {
 		height: 213px;
 		width: 213px;
 	}
+
+	.effect-bubba {
+		margin: 0 0 30px;
+	}
 }
 
 // ***MAX***
@@ -240,6 +244,10 @@ footer {
 @media screen and (max-width:992px){
 	.image-title {
 		margin-bottom:20px;
+	}
+
+	figure {
+		margin-bottom: 50px;
 	}
 }
 

@@ -305,33 +305,43 @@ footer {
     height: 213px;
     width: 213px;
   }
+
+  /* line 237, ../sass/base.scss */
+  .effect-bubba {
+    margin: 0 0 30px;
+  }
 }
 @media screen and (max-width: 992px) {
-  /* line 241, ../sass/base.scss */
+  /* line 245, ../sass/base.scss */
   .image-title {
     margin-bottom: 20px;
   }
+
+  /* line 249, ../sass/base.scss */
+  figure {
+    margin-bottom: 50px;
+  }
 }
 @media screen and (max-width: 768px) {
-  /* line 247, ../sass/base.scss */
+  /* line 255, ../sass/base.scss */
   .site-title {
     display: block;
     text-align: center;
     margin-bottom: 40px;
   }
 
-  /* line 253, ../sass/base.scss */
+  /* line 261, ../sass/base.scss */
   .primary-header {
     text-align: center;
   }
 
-  /* line 257, ../sass/base.scss */
+  /* line 265, ../sass/base.scss */
   .effect-bubba {
     width: 100%;
     height: 300px;
   }
 
-  /* line 263, ../sass/base.scss */
+  /* line 271, ../sass/base.scss */
   figure {
     margin-bottom: 80px;
   }
@@ -383,7 +393,7 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 88%;
   }
 
   /* Anchor will cover the whole item by default */
@@ -472,7 +482,7 @@ footer {
 
   /* line 117, ../sass/hover-grid.scss */
   figure.effect-bubba h2 {
-    padding-top: 35%;
+    padding-top: 36.5%;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
     -webkit-transform: translate3d(0, -20px, 0);
@@ -513,19 +523,19 @@ footer {
     color: #fff;
   }
 }
+/* line 157, ../sass/hover-grid.scss */
+.effect-bubba a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 992px) {
-  /* line 159, ../sass/hover-grid.scss */
+  /* line 163, ../sass/hover-grid.scss */
   figcaption {
     text-align: center;
     margin-top: 10px;
   }
 
-  /* line 164, ../sass/hover-grid.scss */
-  figure {
-    margin-bottom: 50px;
-  }
-
-  /* line 168, ../sass/hover-grid.scss */
+  /* line 169, ../sass/hover-grid.scss */
   figcaption h2 {
     font-size: 20px;
   }
